@@ -442,7 +442,8 @@
 \AtBeginDocument{%
   \pagestyle{fancy}%
   \fancyhead{}%
-  \fancyfoot[C]{\footnotesize\light\adcv@firstname~\adcv@lastname\ifextended\adcv@cvofkey\else\adcv@resumeofkey\fi, \adcv@date, \adcv@telephone~\adcv@email}%
+  %\fancyfoot[C]{\footnotesize\light\adcv@firstname~\adcv@lastname\ifextended\adcv@cvofkey\else\adcv@resumeofkey\fi, \adcv@date, \adcv@telephone~\adcv@email}%
+  \fancyfoot[C]{\footnotesize\light\adcv@firstname~\adcv@lastname\ifextended\adcv@cvofkey\else\adcv@resumeofkey\fi, \adcv@date}%
   \fancyfoot[R]{\raggedleft\footnotesize\light\adcv@page}%
   \renewcommand{\headrulewidth}{0em}%
   \setlength\footskip{\baselineskip}%
@@ -515,7 +516,8 @@
 
 % Publications
 
-\RequirePackage[backend=biber,defernumbers=false,maxnames=99,sorting=none,style=numeric]{biblatex}
+%\RequirePackage[backend=biber,defernumbers=false,maxnames=99,sorting=none,style=numeric]{biblatex}
+\RequirePackage[backend=biber,defernumbers=false,maxnames=99,sorting=none,style=alphabetic]{biblatex}
 \RequirePackage{csquotes}
 \urlstyle{same}
 
