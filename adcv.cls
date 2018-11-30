@@ -362,6 +362,7 @@
 \newcommand*{\adcvphone}[1]{\def\adcv@phone{#1}}
 \newcommand*{\adcvemail}[3]{\def\adcv@emaillocal{#1}\def\adcv@emaildomainsecond{#2}\def\adcv@emaildomaintop{#3}}
 \newcommand*{\adcvwebsite}[2]{\def\adcv@websiteurl{#1}\def\adcv@websitetext{#2}}
+\newcommand*{\adcvlinkedin}[2]{\def\adcv@linkedinurl{#1}\def\adcv@linkedintext{#2}}
 
 \graphicspath{{icons/}}
 
@@ -375,9 +376,12 @@
 
 \newcommand*{\chaticon}{\includegraphics[height=0.75em]{chat.pdf}}
 \newcommand*{\envelopeicon}{\includegraphics[height=0.75em]{envelope.pdf}}
-\newcommand*{\houseicon}{\includegraphics[height=0.75em]{house.pdf}}
+%\newcommand*{\houseicon}{\includegraphics[height=0.75em]{house.pdf}}
+\newcommand*{\houseicon}{\includegraphics[height=0.85em]{github.pdf}}
 \newcommand*{\phoneicon}{\includegraphics[height=0.75em]{phone.pdf}}
 \newcommand*{\placeicon}{\includegraphics[height=0.75em]{place.pdf}}
+\newcommand*{\linkedinicon}{\includegraphics[height=0.85em]{linkedin.pdf}}
+\newcommand*{\githubicon}{\includegraphics[height=0.75em]{github.pdf}}
 
 \ifonline
   \def\adcv@address{\placeicon~\adcv@locality,~\adcv@country}
@@ -412,15 +416,16 @@
     \def\adcv@website{}%
   \fi%
 
-  \begin{center}%
-    \ifonline%
-      \adcv@address~\adcv@email~\adcv@website%
-    \else%
-      \adcv@address~\adcv@telephone%
+  \ifdefined\adcv@linkedinurl%
+    \def\adcv@linkedin{\linkedinicon~\href{\adcv@linkedinurl}{\adcv@linkedintext}}%
+  \fi
 
-      \adcv@email~\adcv@website%
-    \fi%
-  \end{center}%
+  \begin{center}
+    \adcv@address~~~~~\adcv@telephone
+  \end{center}
+  \begin{center}
+    \adcv@email~~~~~\adcv@website~~~~~\adcv@linkedin
+  \end{center}
 }
 
 % Footer

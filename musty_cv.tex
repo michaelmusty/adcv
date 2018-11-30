@@ -1,7 +1,6 @@
 %!TEX TS-program = xelatex
-\documentclass[a4paper,online]{adcv}
-
-%\usepackage[british]{babel}
+\documentclass[a4paper]{adcv}
+\usepackage{comment}
 
 \newcommand*{\hib}{}
 \newcommand*{\uib}{}
@@ -14,87 +13,58 @@
 \adcvname{Michael}{Musty}
 \adcvtitle{Ph.D. Candidate, Mathematics, Dartmouth College}
 \adcvaddress{55 Church Street}{03779}{Piermont}{New Hampshire USA}
-\adcvwebsite{https://math.dartmouth.edu/~mjmusty}{math.dartmouth.edu/~mjmusty}
+%\adcvwebsite{https://math.dartmouth.edu/~mjmusty}{math.dartmouth.edu/~mjmusty}
+\adcvwebsite{https://michaelmusty.github.io}{michaelmusty.github.io}
 \adcvemail{michaelmusty}{gmail}{com}
 \adcvphone{(+1) 603 728 7903}
 \adcvdate{December 2018}
+\adcvlinkedin{https://www.linkedin.com/in/mjmusty/}{mjmusty}
 
 \begin{document}
 
-%\selectlanguage{british}
+\section{Education}{
+  \begin{adcvtabletwo}
+    \adcvrowtwo{\textbf{Ph.D. Mathematics}, Dartmouth College, Hanover, New Hampshire, USA}{June 2019}
+    \adcvrowskip
+    \adcvrowtwo{\textbf{M.Sc. Mathematics}, University of Vermont, Burlington, Vermont, USA}{2014}
+    \adcvrowskip
+    \adcvrowtwo{\textbf{B.A. Mathematics/Scientific Computing}, Boston College, Chestnut Hill, Massachusetts, USA}{2008}
+  \end{adcvtabletwo}
+}
 
-\section{Education}
+\section{Research Experience}{
+  \begin{adcvtabletwo}
+    \adcvrowtwo{\textbf{Senior Cloud Advisor}, EVRY Cloud Services, Oslo, Norway}{2017--}
+    \adcvrowmulti{}
+    % \adcvrowtwo{\textbf{\href{http://www.arcadia-framework.eu}{ARCADIA}}, a framework for developing highly distributed applications}{2014--2016}
+  \end{adcvtabletwo}
+}
 
-\begin{adcvtabletwo}
-  \adcvrowtwo{\textbf{Ph.D. in Mathematics}, Dartmouth College, Hanover, NH}{June 2019}
-  \adcvrowskip
-  \adcvrowtwo{\textbf{M.Sc. in Mathematics}, University of Vermont, Burlington, VT}{2014}
-  \adcvrowskip
-  \adcvrowtwo{\textbf{B.A. in Mathematics/Scientific Computing}, Boston College, Chestnut Hill, MA}{2008}
-\end{adcvtabletwo}
+\section{Work Experience}{
+}
 
-\section{Work and Research Experience}
+\begin{comment}
+\section{Publications}{
+  \begin{refsection}
+    \nocite{twogroups}
+    \nocite{database}
+    \printbibliography[title={Preprints and Work in Progress}, heading=subbibliography]
+  \end{refsection}
+  \begin{refsection}
+    \nocite{ants}
+    \nocite{database}
+    \nocite{aaron}
+    \nocite{belyi}
+    \printbibliography[title={Peer-Reviewed Articles}, heading=subbibliography]
+  \end{refsection}
+  % \href{https://scholar.google.com/citations?user=s1bqnpoAAAAJ}{30+ publications} in peer-reviewed conferences and journals.
+}
+\end{comment}
 
-\begin{adcvtabletwo}
-  \adcvrowtwo{\textbf{Senior Cloud Advisor}, EVRY Cloud Services, Oslo, Norway}{2017--}
-  \adcvrowmulti{}
-  % \adcvrowtwo{\textbf{\href{http://www.arcadia-framework.eu}{ARCADIA}}, a framework for developing highly distributed applications}{2014--2016}
-\end{adcvtabletwo}
-
-\section{Publications}
-
-\begin{refsection}
-  \nocite{ants}
-  \nocite{database}
-  \nocite{aaron}
-  \nocite{belyi}
-  \printbibliography[title={Peer-Reviewed Articles}, heading=subbibliography]
-\end{refsection}
-
-% \href{https://scholar.google.com/citations?user=s1bqnpoAAAAJ}{30+ publications} in peer-reviewed conferences and journals.
-
-\ifextended
-  \section{Presentations}
-
+\section{Presentations}{
   \begin{adcvpresentations}
-    \adcvpresentation{Differences between research and industry}{\href{https://www.facebook.com/scienzasenzaconfini.comitesoslo/}{Scienza senza confini}, Oslo, Norway, 12 May 2017}
-    \adcvpresentation{The lessons I have learned in more than four years at SINTEF}{\href{http://www.sintef.no}{SINTEF}, Oslo, Norway, 27 Feb 2017}
-    \adcvpresentation{Model-Driven Engineering of Cloud Applications}{\href{http://futureofclouds.com/}{Future of Clouds}, Budapest, Hungary, 27 Sep 2016}
-    \adcvpresentation{Cloud Application Modelling with CAMEL}{\href{https://www.evry.com/no/arrangementer/paasage-cloud-event/}{PaaSage Industrial Workshop at EVRY}, Oslo, Norway, 20 Sep 2016}
-    \adcvpresentation{\href{https://alessandrorossini.org/no-email-not-collaborative-editing-solution-comparison-state-of-the-art/}{No, email is not a collaborative editing solution—A comparison of the state-of-the-art}}{\href{http://www.sintef.no}{SINTEF}, Oslo, Norway, 2 Jun 2016}
-    \adcvpresentation{Cloud Application Modelling and Execution Language (CAMEL)}{\href{https://www.hlrs.de/fileadmin/sys/public/events/2016/Preliminary_Agenda_From-Cloud-to_Road_2016-04-11_V1.2.pdf}{From Cloud to Road}, Stuttgart, Germany, 11 Apr 2016}
-    \adcvpresentation{\href{https://alessandrorossini.org/chocolate-hazelnut-spread-experiment/}{The Chocolate-Hazelnut Spread Experiment}}{\href{http://www.sintef.no}{SINTEF}, Oslo, Norway, 10 Mar 2016}
-    \adcvpresentation{Big Data Meets Cloud}{\href{http://bigdatavalue.no/2015/09/21/big-data-meets-cloud-seminar/}{Big Data Meets Cloud SINTEF seminar}, Oslo, Norway, 20 Oct 2015}
-    \adcvpresentation{Failure Prevention and Recovery (FPR) Mechanism, part of the Broker@Cloud Tutorial}{\href{http://esocc2015.unime.it/}{ESOCC 2015}, Taormina, Italy, 17 Sep 2015}
-    \adcvpresentation{Cloud Application Modelling and Execution Language (CAMEL) and the PaaSage Workflow}{\href{http://esocc2015.unime.it/}{ESOCC 2015}, Taormina, Italy, 15 Sep 2015}
-    \adcvpresentation{A Comparison of Two-Level and Multi-Level Modelling for Cloud-Based Applications}{\href{https://www.uni-marburg.de/fb12/swt/ecmfa2015/}{ECMFA 2015}, part of \href{http://www.disim.univaq.it/staf2015/}{STAF 2015}, L'Aquila, Italy, 23 Jul 2015}
-    \adcvpresentation{Failure Analysis, Prevention, and Recovery}{\href{http://www.uib.no}{\uib} and \href{http://www.hib.no}{\hib}, Norway, 28-29 Apr 2015}
-    \adcvpresentation{Self-Adaptive Multi-Cloud Applications}{\href{http://www.uib.no}{\uib} and \href{http://www.hib.no}{\hib}, Norway, 28-29 Apr 2015}
-    \adcvpresentation{PaaSage---Modelling and Execution of Multi-Cloud Applications}{\href{http://seaclouds.lcc.uma.es/}{SeaClouds 2014}, Manchester, UK, 2 Sep 2014}
-    \adcvpresentation{Cloud Modelling Language}{\href{http://www.uio.no}{University of Oslo}, Norway, 6 May 2013, 24 May 2014}
-    \adcvpresentation{Self-Adaptive Cloud-Based Applications}{\href{https://www.fi-athens.eu/}{Future Internet Assembly 2014}, Athens, Greece, 17 Mar 2014}
-    \adcvpresentation{Broker@Cloud---Continuous Quality Assurance and Optimisation for Cloud Brokers}{\href{http://dx.doi.org/10.1145/2513534.2513535}{NordiCloud 2013}, Oslo, Norway, 2 Sep 2013}
-    \adcvpresentation{Towards Model-Driven Provisioning, Deployment, Monitoring, and Adaptation of Multi-Cloud Systems}{\href{http://www.summersoc.eu/summersoc2013/}{Advanced School on Service Oriented Computing}, Hersonissos, Greece, 4 Jul 2013}
-    \adcvpresentation{Towards Model-Driven Provisioning, Deployment, Monitoring, and Adaptation of Multi-Cloud Systems}{\href{http://www.thecloudcomputing.org/2013/}{IEEE CLOUD 2013}, Santa Clara, CA, USA, 30 Jun 2013}
-    \adcvpresentation{Computer Science and Society: Is a New Social Contract Possible?}{\href{http://www.uib.no}{\uib}, Norway, 2 Oct 2012, 1 Feb 2012, 26 Sep 2011, 31 Jan 2011, 29 Sep 2010, 2 Feb 2010, 22 Sep 2009, 4 Feb 2009}
-    \adcvpresentation{Model Versioning and Multi-Level Modelling}{\href{http://www.sintef.no}{SINTEF}, Oslo, Norway, 24 Sep 2012}
-    \adcvpresentation{Model Versioning and Multi-Level Modelling}{\href{http://www.hials.no}{Aalesund University College}, {\AA}lesund, Norway, 21 Sep 2012}
-    \adcvpresentation{A Graph Transformation-Based Semantics for Deep Metamodelling}{\href{http://avalon.aut.bme.hu/agtive2011/}{AGTIVE 2011}, Budapest, Hungary, 5 Oct 2011}
-    \adcvpresentation{A Formal Approach to Data Validation Constraints in MDE}{\href{http://facs2011.ifi.uio.no/index.php?n=TTSS.TTSS2011}{TTSS 2011}, Oslo, Norway, 13 Sep 2011}
-    \adcvpresentation{Action plan for PhD-education at the Faculty of Mathematics and Natural Sciences. PhD gathering of the Department of Mathematics}{\href{http://www.uib.no}{\uib}, Norway, 25 Nov 2010}
-    \adcvpresentation{Constraint-Aware Model Merging}{\href{https://research.it.abo.fi/nwpt10/}{NWPT 2010}, Turku, Finland, 11 Nov 2010}
-    \adcvpresentation{PhD panel at the Faculty of Mathematics and Natural Sciences. PhD seminar of the Department of Biology}{\href{http://www.uib.no}{\uib}, Norway, 19 Oct 2010}
-    \adcvpresentation{Data Validation Constraints in MDE}{\href{http://www2.imm.dtu.dk/projects/nwpt09/index.html}{NWPT 2009}, Lingby, Denmark, 16 Oct 2009}
-    \adcvpresentation{A Category-Theoretical Approach to the Formalisation of Version Control in MDE}{\href{http://www.pst.ifi.lmu.de/fase2009/}{FASE 2009}, York, UK, 25 Mar 2009}
-    \adcvpresentation{Version Control in MDE}{\href{http://cs.ioc.ee/nwpt08/}{NWPT 2008}, Tallinn, Estonia, 20 Nov 2008}
-    \adcvpresentation{Free software and open source}{\href{http://www.uniurb.it}{Università degli Studi di Urbino}, Italy, 13 Apr 2005}
-    \adcvpresentation{Kernel tuning}{LinuxDay 2004, L'Aquila, Italy, 27 Nov 2004}
-    \adcvpresentation{GNU/Linux: a window to the future}{Festa dell'unità 2004, L'Aquila, Italy, 13 Jul 2004}
-    \adcvpresentation{Hardening the box}{Seminari 2004 OpenLUG, L'Aquila, Italy, 2 Jun 2004}
-    \adcvpresentation{Let's package GNU/Linux}{Seminari 2004 OpenLUG, L'Aquila, Italy, 26 May 2004}
-    \adcvpresentation{Changes in PHP 5/ZendEngine 2.0}{LinuxDay 2003, L'Aquila, Italy, 29 Nov 2003}
-    \adcvpresentation{GNU/Linux in practice}{LinuxDay 2002, L'Aquila, Italy, 23 Nov 2002}
+    \adcvpresentation{title}{\href{url}{urltext}, Oslo, Norway, 12 May 2017}
   \end{adcvpresentations}
-\fi
+}
 
 \end{document}
